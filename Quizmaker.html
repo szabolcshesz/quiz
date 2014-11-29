@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Make your Quiz</title>
+     <link rel="stylesheet" type="text/css" href="bootstrapSignup.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  </head>
+<body>
+	<nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                      
+          </button>
+          <a class="navbar-brand" href="#">Droid Inc.</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="bstr2.html">Home</a></li>
+            <li><a href="quiz_bstr.html">Quiz game</a> </li>
+            <li><a href="bstr1.html">Bootstrap test</a></li>
+            <li><a href="Quizmaker.html">Create new quiz</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  <div class="container">
+  <div class="jumbotron">	
+    <h1><small>QuizMaker</small></h1>
+    <h2><small>Create your own quiz and share it with your friends</small></h2>
+  </div>
+  <div class="container">
+    <div class="row">
+    	<div class="col-md-6">
+            <form role="form" name="quizmaker">
+              <div class="form-group">
+              <label for="sel1">Select Question Number:</label>
+                <select class="form-control" id="qnumber">
+                   <option>1</option>
+                   <option>2</option>
+                   <option>3</option>
+                   <option>4</option>
+                   <option>5</option>
+                   <option>6</option>
+                   <option>7</option>
+                   <option>8</option>
+                   <option>9</option>
+                   <option>10</option>
+                </select>
+              </div>
+          	  <div class="form-group">
+                 <label for="question">Question:</label>
+                 <input type="text" class="form-control" id="question">
+              </div>
+               <div class="form-group">
+                 <label for="answers">Answers:</label>
+                 <input type="text" class="form-control" id="answers">
+                  <span class="help-block">Please seperate your answers with comma</span>
+              </div>
+              <div class="form-group">
+                 <label for="correct">Correct Answer:</label>
+                 <input type="text" class="form-control" id="correct">
+              </div>
+            <button type="submit" class="btn btn-default" onclick="#">Submit</button>
+            </form>
+        </div>
+    </div>
+  </div>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+ <script src="Quizmaker.js"></script>
+</body>
+</html>

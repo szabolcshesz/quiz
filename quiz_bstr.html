@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiz Game</title>
+<link rel="stylesheet" type="text/css" href="bootstrapQuiz.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body ng-controller="authCtrl">
+<nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                      
+          </button>
+          <a class="navbar-brand" href="#">Droid Inc.</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="bstr2.html">Home</a></li>
+            <li><a href="quiz_bstr.html">Quiz game</a> </li>
+            <li><a href="bstr1.html">Bootstrap test</a></li>
+            <li><a href="Quizmaker.html">Create new quiz</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+<div class="container">
+  <div class="jumbotron" style="color:#6495ED">
+        <h1><small>Quiz Game</small></h1>
+        <div class="rules">
+        <h2><small>Rules: Good answers increase your scores</small></h2>
+        </div>
+              
+  </div> 
+</div> 
+  <div class="container">
+   <div class="row">
+     <div class="col-md-3">
+      <!-- Kiserleti szamlalo-->
+         <div class="Info"><p></p>
+          <h3><p id="countdown"></p></h3>
+             <button id="submit" onclick="startTimer(secs)">Start</button> 
+             <button id="submit2" onclick="stopTimer()">Stop</button> 
+             <button id="submit3" onclick="getReminder()">Get</button>   
+        </div> 
+     </div>
+      <div class="col-md-6">
+         <div id="content"></div>
+         <h3 id="question"></h3>
+         <div id="choices"></div>
+         <button id="check" onclick="stopTimer()">Submit</button> 
+        <button id="next" onclick="checkA()">Next</button>    
+         <p id="score"></p>
+      </div>
+      <div class="col-md-3">
+        <span id="gameContainer2"></span>
+      </div>  
+    </div>
+ </div> 
+</div>
+           
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="JS_Quiz2.js"></script>
+ </body> 
+</html>

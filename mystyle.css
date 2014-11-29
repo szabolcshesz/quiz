@@ -1,0 +1,72 @@
+.container
+{
+width:100%;
+height:100%;
+background-color:#e5eecc;
+border:solid 1px #c3c3c3;	
+}
+.gameName, .rules
+{
+width: 80%;
+height: 75px;
+padding:10px;
+text-align:center;
+background-color:#e5eecc;
+border:solid 1px #c3c3c3;
+border-radius: 10px;
+}
+.rules
+{
+padding:10px;
+display:none;
+}
+.gameContainer1, .gameContainer2
+{
+width: 40%;
+height: 250px;
+background-color:lightblue;
+border-width: 1px;
+border-color: #000;
+border-style: solid;
+box-sizing:border-box;
+border-radius: 10px;
+float: left;
+}
+
+.gameContainer1 
+{
+float: left;
+}
+
+.gameContainer2
+{
+float: left;
+
+}
+
+.userAuth
+{
+position:absolute;
+left: 0px;
+top: 450px;
+padding:10px;
+text-align: center;
+
+}
+.Info
+{
+position: absolute;
+left: 0px;
+top:500px;
+width: 200px;
+height: 145px;
+padding:10px;
+background-color:#e5eecc;
+border:solid 1px #c3c3c3;
+border-radius: 10px;
+}
+
+#counter
+{
+color:red;
+}

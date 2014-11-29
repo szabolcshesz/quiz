@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign Up</title>
+<link rel="stylesheet" type="text/css" href="bootstrapSignup.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                      
+          </button>
+          <a class="navbar-brand" href="#">Droid Inc.</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="bstr2.html">Home</a></li>
+            <li><a href="quiz_bstr.html">Quiz game</a> </li>
+            <li><a href="bstr1.html">Bootstrap test</a></li>
+            <li><a href="Quizmaker.html">Create new quiz</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  <div class="container">
+  <div class="jumbotron">	
+    <h1><small>Sign Up Page</small></h1>
+    <h2><small>Why should I sign up?</small></h2>
+    <ul>
+    <li>You can save and share your game results</li>
+    <li>You can add new quiz games and send it to your friends</li>	
+    </ul>
+  </div>
+  <div class="container">
+    <div class="row">
+    	<div class="col-md-3">
+            <form action="" method="post" novalidate="novalidate" role="form" name="SignUpForm" id="SignUpForm">
+          	  <div class="form-group form-group-sm">
+                 <label for="usr">Username:</label>
+                 <input type="text" class="form-control" id="usr" name="usr">
+                 <span class="help-block">Please select unique username.</span>
+              </div>
+               <div class="form-group form-group-sm">
+                 <label for="email">Email address:</label>
+                 <input type="email" class="form-control" id="email" name="email">
+              </div>
+              <div class="form-group form-group-sm">
+                 <label for="pwd">Password:</label>
+                 <input type="password" class="form-control" id="pwd" name="pwd">
+              </div>
+            <button type="submit" class="btn btn-default" onclick="#" id="submit">Submit</button>
+            </form>
+        </div>
+        <div class="col-md-3">
+        	 <div class="container">
+              <h3>Privacy options</h3>
+              <p><small>Please set your privacy options</small></p>
+                <form role="form">
+                    <div class="checkbox">
+                    <label><input type="checkbox" value="emails">I would like to receive email newsletters</label>
+                   </div>
+                   <div class="checkbox">
+                   <label><input type="checkbox" value="sms">I would like to receive sms notifications</label>
+                   </div>
+                   <div class="checkbox disabled">
+                  <label><input type="checkbox" checked="checked" value="terms" disabled>I agree with the terms and conditions</label>
+                  </div>
+               </form>
+            </div>
+        </div> 
+   </div>
+ </div>
+ </div>
+ <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="signup.js"></script>
+</body> 
+</html>
